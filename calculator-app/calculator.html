@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./user.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <section>
+      <h2 id="name">Welcome to Calculator App,</h2>
+      <script src="./calculator.js"></script>
+      <div class="container">
+        <div class="input-group" style="font-size: 0.75rem">
+          <label
+            >Note: (<label style="color: red">*</label
+            ><label>) Fields are mandatory</label></label
+          >
+        </div>
+        <div class="input-group">
+          <label>Number 1<label style="color: red">*</label></label>
+          <input type="text" id="field1" placeholder="number 1" />
+          <label id="field1error" class="error"></label>
+        </div>
+        <div class="input-group">
+          <label>Number 2<label style="color: red">*</label></label>
+          <input type="text" id="field2" placeholder="number 2" />
+          <label id="field2error" class="error"></label>
+        </div>
+
+        <div class="button-container">
+          <input class="sign-in-button" type="submit" id="0" value="Add" />
+          <input class="sign-in-button" type="submit" id="1" value="Subtract" />
+          <input class="sign-in-button" type="submit" id="2" value="Multiply" />
+          <input class="sign-in-button" type="submit" id="3" value="Divide" />
+          <input class="sign-in-button" type="submit" id="4" value="Clear" />
+        </div>
+
+        <div class="input-group">
+          <label>Result:</label>
+          <input type="text" id="result" placeholder="result" readonly />
+        </div>
+        <div id="excep" class="input-group-red">
+          <label
+            >Exeption: In java Script it shows as Infinity, practically it's not
+            possible</label
+          >
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

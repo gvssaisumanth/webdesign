@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    margin: 0;
+  }
+
+  *,
+*::before,
+*::after{box-sizing:border-box;}
+
+body{
+    min-height: 100vh;
+    background-color: rgba(8, 8, 6, 0.9);
+}
+button{
+    aspect-ratio: 1;
+    height: 7.5rem;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #00308F, #7CB9E8);
+    font-size: 200%;
+   
+}
+button:hover{
+    cursor: pointer;
+    border-color: #03163d;
+
+
+}
+.button-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem
+}
+i{
+    color: rgb(207, 204, 235);
+}
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+label{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 7.5rem;
+}
